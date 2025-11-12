@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Collaborative Canvas</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header id="toolbar">
+    <div class="left">
+      <span id="roomLabel">Room: demo</span>
+      <button id="undoBtn" title="Undo last action">Undo</button>
+      <button id="redoBtn" title="Redo last undone action">Redo</button>
+      <input type="color" id="colorPicker" value="#ff0000" title="Select brush color">
+      <input type="range" id="widthRange" min="1" max="25" value="4" title="Brush width">
+    </div>
+    <div class="right">
+      <span id="usersOnline">Users: 1</span>
+    </div>
+  </header>
+
+  <main>
+    <canvas id="canvas"></canvas>
+    <div id="cursor-layer"></div>
+  </main>
+
+  <footer>
+    <p>Collaborative Canvas — draw together in real time 🎨</p>
+  </footer>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./canvas.js"></script>
+  <script src="./websocket.js"></script>
+  <script src="./cursors.js"></script>
+</body>
+</html>
