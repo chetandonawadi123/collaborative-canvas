@@ -4,6 +4,8 @@
 
 This challenge tests your ability to implement shape detection algorithms that can identify and classify the  geometric shapes in images:
 
+
+VIDEO LINK : https://drive.google.com/file/d/1SrJKhZR0Yj8ZUQ2rlED-hws0IAwxifxE/view?usp=sharing
 ## Setup Instructions
 
 ### Prerequisites
